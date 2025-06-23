@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Сырный сомелье</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="img/SVG/logo_cheese.svg" alt="Логотип" class="logo" />
+            <span class="brand">Сырный сомелье</span>
+          </a>
+        </div>
+        <div class="burger"><span></span></div>
+        <nav class="nav">
+          <a href="#about">О сыре</a>
+          <a href="#promo">Промоакция</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#faq">Вопросы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Герой -->
+    <section class="hero">
+      <video
+        class="hero__bg-video"
+        src="img/video/cheese_farm_reday.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+      <div class="container hero__container hero__content">
+        <h1>Настоящий вкус<br />французской деревни</h1>
+        <p class="hero__desc">
+          Познакомьтесь с «Сен-Нектер» — фермерским сыром из сердца Франции,
+          который возвращает к традициям, теплу и натуральному вкусу.
+        </p>
+        <a href="#promo" class="hero__btn"
+          ><img
+            src="img/SVG/gift_button.svg"
+            alt="Подарок"
+            class="hero__icon"
+          />
+          Участвовать в розыгрыше</a
+        >
+      </div>
+    </section>
+
+    <!-- О сыре -->
+    <section class="about" id="about">
+      <div class="container about__container">
+        <h2>Что делает "Сен-Нектер" особенным?</h2>
+        <div class="about__content">
+          <div class="about__desc">
+            <p>
+              Фермерский сыр «Сен-Нектер» — настоящее воплощение французских
+              сырных традиций. Этот благородный сорт производится в живописных
+              горах Мон-Дор (регион Овернь, Франция), где особый микроклимат и
+              сочные альпийские травы придают молоку неповторимый вкус и аромат.
+            </p>
+            <p>
+              Каждая головка сыра создается вручную опытными мастерами по
+              старинным рецептам, сохранившимся с давних времен. В процессе
+              медленного созревания в прохладных сырных погребах «Сен-Нектер»
+              приобретает свою фирменную текстуру — нежную, но упругую, с тонкой
+              натуральной корочкой.
+            </p>
+          </div>
+          <div class="about__features">
+            <div class="about__box">
+              <h3>Вкус и текстура:</h3>
+              <ul>
+                <li>Мякоть: упругая, светло-жёлтая</li>
+                <li>Аромат: грибы, орехи, солома, сливки</li>
+                <li>Корочка: натуральная, с фирменной маркировкой</li>
+                <li>Срок выдержки: 4-6 недель</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about__gallery">
+          <div class="about__img-box">
+            <img
+              src="img/JPG/melted_cheese.jpg"
+              alt="Сыр разрез"
+              class="about__img"
+            />
+            <div class="about__img-overlay">
+              <h3 class="about__img-desc">Нежная текстура мякоти</h3>
+            </div>
+          </div>
+          <div class="about__img-box">
+            <img
+              src="img/JPG/labeled_cheese.jpg"
+              alt="Сыр с маркировкой"
+              class="about__img"
+            />
+            <div class="about__img-overlay">
+              <h3 class="about__img-desc">С фирменной маркировкой</h3>
+            </div>
+          </div>
+          <div class="about__img-box">
+            <img
+              src="img/JPG/packaged_cheese.jpg"
+              alt="Упакованный сыр"
+              class="about__img"
+            />
+            <div class="about__img-overlay">
+              <h3 class="about__img-desc">Надежной упаковкой</h3>
+            </div>
+          </div>
+        </div>
+        <div class="about__nutrition-cert">
+          <div class="about__nutrition">
+            <h3>Пищевая ценность (на 100г)</h3>
+            <div class="nutrition-table">
+              <div class="nutrition-row">
+                <span class="nutrition-name">Калорийность:</span
+                ><span class="nutrition-value">364 ккал</span>
+              </div>
+              <div class="nutrition-row">
+                <span class="nutrition-name">Белки:</span
+                ><span class="nutrition-value">23 г</span>
+              </div>
+              <div class="nutrition-row">
+                <span class="nutrition-name">Жиры:</span
+                ><span class="nutrition-value">29 г</span>
+              </div>
+              <div class="nutrition-row">
+                <span class="nutrition-name">Углеводы:</span
+                ><span class="nutrition-value">0.4 г</span>
+              </div>
+              <div class="nutrition-row">
+                <span class="nutrition-name">Кальций:</span
+                ><span class="nutrition-value">510 мг</span>
+              </div>
+              <div class="nutrition-row">
+                <span class="nutrition-name">Натрий:</span
+                ><span class="nutrition-value">1.2 г</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__cert">
+            <h3>Сертификаты качества</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <img src="img/SVG/check.svg" alt="AOC" class="cert-icon" />
+                <div class="cert-text">
+                  <span class="cert-title">AOC (Франция)</span>
+                  <span class="cert-desc"
+                    >Контролируемое наименование по происхождению</span
+                  >
+                </div>
+              </div>
+              <div class="cert-item">
+                <img src="img/SVG/star.svg" alt="organic" class="cert-icon" />
+                <div class="cert-text">
+                  <span class="cert-title">Органическое производство</span>
+                  <span class="cert-desc">Без ГМО и искусственных добавок</span>
+                </div>
+              </div>
+              <div class="cert-item">
+                <img src="img/SVG/grass.svg" alt="eco" class="cert-icon" />
+                <div class="cert-text">
+                  <span class="cert-title">Экологически чистое</span>
+                  <span class="cert-desc"
+                    >Коровы пасутся на альпийских лугах</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- История и производство -->
+    <section class="history">
+      <h2>История и производство</h2>
+      <div class="container history__container">
+        <div class="history__desc">
+          <p>
+            «Сен-Нектер» — гордость французских фермеров. Этот сыр начали
+            производить ещё в XVII веке в коммуне Санси. Сегодня его делают по
+            тем же рецептам: из свежего молока, вручную, в небольших хозяйствах.
+          </p>
+          <p>
+            Мон-Дор (департамент Пюи-де-Дом) — вулканическое плато с лугами и
+            чистым воздухом. Именно здесь рождается настоящий вкус.
+          </p>
+          <div class="history__map">
+            <strong>На карте:</strong><br />Овернь, Франция (63 департамент)
+          </div>
+        </div>
+        <img
+          src="img/JPG/mountains_france.jpg"
+          alt="Горы Франции"
+          class="history__img"
+        />
+      </div>
+    </section>
+
+    <!-- Процесс производства -->
+    <section class="process">
+      <div class="container process__container">
+        <h2>Процесс производства</h2>
+        <div class="process__steps">
+          <div class="process__step">
+            <img src="img/JPG/milk_overflow.jpg" alt="Молоко" />
+            <h3>Молоко</h3>
+            <p>Свежее молоко от коров, пасущихся на альпийских лугах</p>
+          </div>
+          <div class="process__step">
+            <img src="img/JPG/bifurcation.jpg" alt="Створаживание" />
+            <h3>Створаживание</h3>
+            <p>Добавление натуральной закваски и сычужного фермента</p>
+          </div>
+          <div class="process__step">
+            <img src="img/JPG/forming.jpg" alt="Формирование" />
+            <h3>Формирование</h3>
+            <p>Ручное формование головок и прессование</p>
+          </div>
+          <div class="process__step">
+            <img src="img/JPG/maturation.jpg" alt="Созревание" />
+            <h3>Созревание</h3>
+            <p>4-6 недель в прохладных погребах при постоянной влажности</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фермерское хозяйство -->
+    <section class="farm">
+      <div class="container farm__container">
+        <h2>Фермерское хозяйство</h2>
+        <div class="farm__gallery">
+          <div class="farm__item-box">
+            <div class="farm__item">
+              <img src="img/JPG/pasture.jpg" alt="Пастбище" />
+              <p>Коровы пасутся на экологически чистых пастбищах</p>
+            </div>
+          </div>
+          <div class="farm__item-box">
+            <div class="farm__item">
+              <img src="img/JPG/maturation.jpg" alt="Погреба" />
+              <p>Традиционные погреба для созревания сыра</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Промоакция -->
+    <section class="promo" id="promo">
+      <div class="container promo__container">
+        <h2>
+          Покупайте «Сен-Нектер» в сети «Сырный сомелье»<br />и участвуйте в
+          розыгрыше призов!
+        </h2>
+        <div class="promo__prizes">
+          <div class="promo__prize">
+            <img src="img/JPG/board.jpg" alt="Доски" /><span
+              >Винтажные сырные доски</span
+            >
+          </div>
+          <div class="promo__prize">
+            <img src="img/JPG/basket_cheese.jpg" alt="Корзина" /><span
+              >Корзина с фермерскими сырами</span
+            >
+          </div>
+          <div class="promo__prize">
+            <img src="img/JPG/certificate.jpg" alt="Сертификат" /><span
+              >Подарочный сертификат</span
+            >
+          </div>
+        </div>
+        <div class="elif">
+          <h3>Условия:</h3>
+          <div class="promo__steps">
+            <div class="promo__step-card">
+              <div class="promo__step-row">
+                <div class="promo__step-title">1. Купите сыр "Сен-Нектер"</div>
+                <img
+                  src="img/SVG/buy.svg"
+                  alt="Купить"
+                  class="promo__step-icon"
+                />
+              </div>
+              <div class="promo__step-row">
+                <div class="promo__step-title">2. Сохраните чек</div>
+                <img
+                  src="img/SVG/cheque.svg"
+                  alt="Чек"
+                  class="promo__step-icon"
+                />
+              </div>
+              <div class="promo__step-row">
+                <div class="promo__step-title">
+                  3. Введите данные в форму ниже
+                </div>
+                <img
+                  src="img/SVG/format.svg"
+                  alt="Форма"
+                  class="promo__step-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="promo__form">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Номер чека" required />
+          <label class="promo__consent"
+            ><input type="checkbox" required /> Я даю согласие на обработку
+            персональных данных</label
+          >
+          <button type="submit">Принять участие</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+      <div class="container reviews__container">
+        <h2>Что о нас говорят ценители?</h2>
+        <div class="reviews__list">
+          <div class="review">
+            <img src="img/JPG/andrey.jpg" alt="Андрей" class="ava" />
+            <div class="review__info">
+              <strong>Андрей</strong><br />Новосибирск
+            </div>
+            <p>
+              "Сен-Нектер — это аромат Франции. Никогда раньше не пробовал
+              ничего подобного! Заказываю уже третий раз."
+            </p>
+            <div class="review__stars-row">
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+            </div>
+          </div>
+          <div class="review">
+            <img src="img/JPG/elena.jpg" alt="Елена" class="ava" />
+            <div class="review__info"><strong>Елена</strong><br />Москва</div>
+            <p>
+              "Сливочный вкус, богатая текстура. Настоящий гастрономический
+              восторг! Подаю гостям — все в восхищении."
+            </p>
+            <div class="review__stars-row">
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+            </div>
+          </div>
+          <div class="review">
+            <img src="img/JPG/irina.jpg" alt="Ирина" class="ava" />
+            <div class="review__info"><strong>Ирина</strong><br />Казань</div>
+            <p>
+              "Покупала на акцию — теперь беру каждую неделю. Это просто чудо!
+              Дети тоже полюбили этот сыр."
+            </p>
+            <div class="review__stars-row">
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+              <img
+                src="img/SVG/star.svg"
+                alt="Оценка"
+                class="review__star-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq__container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq__list">
+          <div class="faq__item">
+            <strong>Какой вкус у сыра "Сен-Нектер"?</strong>
+            <p>Лесные орехи, грибы, пряности, сливки, овёс и фрукты.</p>
+          </div>
+          <div class="faq__item">
+            <strong>Где производится сыр?</strong>
+            <p>Во Франции, в гористой местности Мон-Дор, регион Овернь.</p>
+          </div>
+          <div class="faq__item">
+            <strong>Как принять участие в розыгрыше?</strong>
+            <p>Купить сыр, сохранить чек и заполнить форму на сайте.</p>
+          </div>
+          <div class="faq__item">
+            <strong>Где можно купить сыр?</strong>
+            <p>См. раздел "Где купить..." — карта магазинов по всей России.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Магазины и доставка -->
+    <section class="shops" id="contacts">
+      <h2>Где купить сыр "Сен-Нектер"?</h2>
+      <div class="container shops__container">
+        <div class="shops__addresses">
+          <div class="shops__city">
+            <strong>Москва</strong><br />ул. Сырная, 7 (м. Арбатская)<br />Пн-Вс:
+            9:00-21:00
+          </div>
+          <div class="shops__city">
+            <strong>Санкт-Петербург</strong><br />пр. Гастрономический, 12 (м.
+            Невский проспект)<br />Пн-Вс: 10:00-20:00
+          </div>
+          <div class="shops__city">
+            <strong>Новосибирск</strong><br />ул. Красный проспект, 25<br />Пн-Вс:
+            10:00-19:00
+          </div>
+          <div class="shops__city">
+            <strong>Казань</strong><br />ул. Баумана, 58<br />Пн-Вс: 9:00-20:00
+          </div>
+        </div>
+        <div class="shops_combo">
+          <div class="shops__online">
+            <div class="shops_form">
+              <h3>Интернет-магазин</h3>
+              <p>Заказывайте с доставкой по всей России</p>
+              <button>Заказать</button>
+            </div>
+            <img
+              src="img/SVG/basket.svg"
+              alt="Интернет-магазин"
+              class="shops__online-icon"
+            />
+          </div>
+          <div class="shops__delivery">
+            <h3>Условия доставки:</h3>
+            <ul>
+              <li>Москва и МО: бесплатно от 3000₽</li>
+              <li>СПб и ЛО: бесплатно от 4000₽</li>
+              <li>Регионы: курьерская служба</li>
+              <li>Упаковка: термоконтейнер</li>
+            </ul>
+          </div>
+        </div>
+        <div class="shops__gallery">
+          <div class="shops__img">
+            <img src="img/JPG/types_cheeses.jpg" alt="Виды сыров" /><span
+              >Более 50 видов Французских сыров</span
+            >
+          </div>
+          <div class="shops__img">
+            <img src="img/JPG/test.jpg" alt="Проба" /><span
+              >Попробуйте перед покупкой</span
+            >
+          </div>
+          <div class="shops__img">
+            <img src="img/JPG/advice.jpg" alt="Рекомендации" /><span
+              >Профессиональные рекомендации</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <img src="img/SVG/logo_cheese.svg" alt="Логотип" />
+          <span>Сырный сомелье</span>
+        </div>
+        <div class="footer__row">
+          <div class="footer__menu">
+            <h4>Меню</h4>
+            <ul>
+              <li><a href="#about">О сыре</a></li>
+              <li><a href="#promo">Промоакции</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#faq">Вопросы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <h4>Контакты</h4>
+            <ul>
+              <li>
+                <img
+                  src="img/SVG/org.svg"
+                  alt="Организация"
+                  class="footer__contact-icon"
+                />
+                ООО "Сырный Сомелье"
+              </li>
+              <li>
+                <img
+                  src="img/SVG/map.svg"
+                  alt="Адрес"
+                  class="footer__contact-icon"
+                />
+                Москва, ул. Сырная, д. 1
+              </li>
+              <li>
+                <img
+                  src="img/SVG/phone.svg"
+                  alt="Телефон"
+                  class="footer__contact-icon"
+                />
+                Телефон: +7 (945) 376-83-98
+              </li>
+              <li>
+                <img
+                  src="img/SVG/mail.svg"
+                  alt="Email"
+                  class="footer__contact-icon"
+                />
+                Email: info@cheesesommelier.ru
+              </li>
+              <li>
+                <img
+                  src="img/SVG/VK.svg"
+                  alt="Вконтакте"
+                  class="footer__contact-icon"
+                />
+                Вконтакте: cheesesommelier
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        &#169; 2025 Сырный Сомелье. Все права защищены. &#174;
+      </div>
+    </footer>
+    <div class="popup-overlay" id="popup-overlay" style="display: none">
+      <div class="popup-window">
+        <span class="popup-close" id="popup-close">&times;</span>
+        <h2 class="popup-title">Спасибо за участие!</h2>
+        <div class="popup-text">Ваша заявка принята.</div>
+        <div class="popup-text">
+          Следите за результатами – розыгрыш скоро состоится!
+        </div>
+        <div class="popup-text">Удачи!</div>
+      </div>
+    </div>
+    <div class="popup-overlay" id="order-popup" style="display: none">
+      <div class="popup-window">
+        <h2
+          style="
+            font-family: 'Playfair Display', serif;
+            color: #7a3a09;
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+          "
+        >
+          ERROR
+        </h2>
+        <div
+          style="
+            font-family: 'Playfair Display', serif;
+            color: #7a3a09;
+            font-size: 2rem;
+            margin-bottom: 18px;
+          "
+        >
+          Извините, этот раздел ещё в разработке.
+        </div>
+        <div style="color: #a95d1b; font-size: 1.3rem; margin-bottom: 32px">
+          Скоро здесь появится возможность оформить заказ.
+        </div>
+        <button class="order-popup-btn" id="order-popup-btn">Выйти</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
